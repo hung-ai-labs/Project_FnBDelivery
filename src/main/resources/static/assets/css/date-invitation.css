@@ -1,0 +1,23 @@
+.date-dialog { box-sizing: border-box; width: min(580px, calc(100% - 28px)); max-height: 90dvh; padding: 0; margin: auto; border: 1px solid #edc8ce; border-radius: 26px; background: #fff8f1; color: #592338; text-align: left; overflow-y: auto; font-family: system-ui, sans-serif; }
+.date-dialog::backdrop { background: #3f172980; backdrop-filter: blur(5px); }
+.date-dialog-inner { padding: 30px; }
+.date-dialog h2 { font: 32px/1.25 Georgia, serif; margin: 14px 0; color: #692c42; }
+.date-reward { margin-bottom: 22px; line-height: 1.6; }
+.date-form fieldset { padding: 0; margin: 0; border: 0; min-width: 0; }
+.date-form label { display: block; color: #592338; font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+.date-form input, .date-form textarea { display: block; box-sizing: border-box; width: 100%; min-width: 0; margin-top: 8px; padding: 12px; border: 1px solid #cc8c9e; border-radius: 12px; background: white; color: #592338; font: 16px/1.5 system-ui, sans-serif; }
+.date-form textarea { resize: vertical; }
+.date-form input:focus-visible, .date-form textarea:focus-visible { outline: 3px solid #b45a15; outline-offset: 2px; }
+.date-fields { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 16px; }
+.date-hint { font-size: 12px; color: #875568; line-height: 1.7; margin: 10px 0 16px; }
+.date-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.date-actions button { font: 600 14px/1.5 system-ui, sans-serif; }
+.date-status { line-height: 1.7; color: #41704d; }
+.date-status.is-error { color: #a62d49; }
+.date-login { display: block; margin: 12px 0; color: #91334e; }
+.date-dialog [hidden] { display: none !important; }
+.date-dialog button:disabled { opacity: .6; cursor: wait; }
+.date-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.love-ticket-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.love-invitation-sent { font-size: 13px; color: #41704d; line-height: 1.7; margin-top: 14px; }
+@media (max-width: 500px) { .date-dialog-inner { padding: 24px 20px; } .date-fields { grid-template-columns: 1fr; gap: 0; } .date-actions { flex-direction: column; } }

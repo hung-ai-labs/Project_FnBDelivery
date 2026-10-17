@@ -55,6 +55,9 @@ public class SecurityConfig {
                         .requestMatchers("/api/auth/**","/api/feedback/**", "/api/vector/**","/api/favourites/**", "/api/chat-ai/**", "/api/products/**", "/api/order/**", "/login.html", "/register.html", "/admin-orders.html", "/css/**", "/js/**", "/assets/**", "/").permitAll()
                         .anyRequest().authenticated()
                 )
+                .exceptionHandling(errors -> errors.defaultAuthenticationEntryPointFor(
+                        (request, response, exception) -> response.sendError(401),
+                        new org.springframework.security.web.util.matcher.AntPathRequestMatcher("/api/date-invitations")))
                 .formLogin(form -> form.loginPage("/login.html").permitAll())
                 .logout(logout -> logout
                         .logoutUrl("/api/auth/logout")

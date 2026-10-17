@@ -118,6 +118,10 @@
             .final-price { font-size: 1.2rem; }
         }
     </style>
+    <link rel="stylesheet" href="/assets/css/love.css?v=1">
+    <script src="/assets/js/love.js?v=1" defer></script>
+    <link rel="stylesheet" href="/assets/css/quick-nav.css?v=1">
+    <script src="/assets/js/quick-nav.js?v=1" defer></script>
 </head>
 <body>
 
@@ -202,6 +206,7 @@
 </div>
 
 <script>
+    let submittingOrder = false;
     let checkoutItems = []; // Lưu danh sách bánh đang thanh toán
 
     document.addEventListener("DOMContentLoaded", async function() {
@@ -267,6 +272,7 @@
 
     // Hàm gửi dữ liệu lên Server
     async function processOrder() {
+        if (submittingOrder) return;
         if (checkoutItems.length === 0) {
             alert("Giỏ hàng của em đang trống kìa!");
             return;
@@ -286,6 +292,9 @@
             quantity: item.quantity.toString() // Chuyển số lượng thành chuỗi theo DTO
         }));
 
+        submittingOrder = true;
+        const submitButton = document.querySelector('.btn-order');
+        submitButton.disabled = true;
         try {
             const response = await fetch('/api/order', {
                 method: 'POST',
@@ -294,13 +303,17 @@
             });
 
             const result = await response.json();
-            if (result.success) {
+            if (response.ok && result.success) {
+                window.LoveNotes?.recordSuccessfulOrder();
                 window.location.href = "/success.html";
             } else {
                 alert(result.message);
             }
         } catch (e) {
             alert("Anh chin mời công chúa iu đăng nhập rùi gửi lại đơn giúp anh nhé!");
+        } finally {
+            submittingOrder = false;
+            submitButton.disabled = false;
         }
     }
 </script>

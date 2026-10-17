@@ -1,0 +1,13 @@
+.quick-nav { position: fixed; top: 104px; right: max(16px, env(safe-area-inset-right)); z-index: 1100; color: #692c42; font: 14px/1.5 system-ui, sans-serif; text-align: left; }
+.quick-nav summary { list-style: none; display: flex; gap: 10px; align-items: center; cursor: pointer; padding: 12px 18px; border: 1px solid #edc8ce; border-radius: 30px; background: #fff8f1; box-shadow: 0 5px 20px #692c4220; font-weight: 600; }
+.quick-nav summary::-webkit-details-marker { display: none; }
+.quick-nav[open] summary { background: #91334e; color: white; }
+.quick-nav nav { margin-top: 10px; padding: 8px; width: 260px; max-width: calc(100vw - 48px); border: 1px solid #edc8ce; border-radius: 18px; background: #fffdfa; box-shadow: 0 12px 35px #692c4225; }
+.quick-nav nav a { display: flex; gap: 12px; padding: 12px; border-radius: 12px; color: #692c42; text-decoration: none; }
+.quick-nav nav a:hover, .quick-nav nav a[aria-current="page"] { background: #f9e5e5; }
+.quick-nav small { display: block; font-size: 12px; color: #875568; margin-top: 2px; }
+.quick-nav summary:focus-visible, .quick-nav a:focus-visible { outline: 3px solid #b45a15; outline-offset: 3px; }
+.quick-nav-standalone, .wheel-page .quick-nav { top: max(18px, env(safe-area-inset-top)); }
+@media (max-width: 700px) { .quick-nav { top: 84px; right: 12px; } .quick-nav summary { padding: 10px 14px; } .wheel-page .quick-nav { top: 64px; } }
+
+body.has-quick-nav-standalone { padding-top: 100px; }

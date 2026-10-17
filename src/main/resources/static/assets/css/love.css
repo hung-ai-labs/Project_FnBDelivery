@@ -1,0 +1,35 @@
+/* Scoped styles for the personal gift. */
+.love-home, .love-wallet { box-sizing: border-box; max-width: 1120px; margin: 48px auto; padding: 32px; color: #592338; }
+.love-home { display: grid; grid-template-columns: 1.35fr 1fr; gap: 32px; align-items: center; background: #fff8f1; border: 1px solid #f3d9d6; border-radius: 28px; box-shadow: 0 14px 45px #722d4110; }
+.love-kicker { display: block; font: 600 11px/1.6 sans-serif; letter-spacing: .15em; color: #a34860; }
+.love-home h1, .love-dialog h2, .love-success h1 { font-family: Georgia, serif; font-size: clamp(28px, 4vw, 46px); line-height: 1.2; margin: 16px 0; color: #692c42; }
+.love-home p, .love-dialog p, .love-success p, .love-wallet p { line-height: 1.8; }
+.love-count { background: #f9e5e5; border-radius: 22px; text-align: center; padding: 32px 20px; }
+.love-count strong { display: block; font: 400 clamp(55px, 8vw, 86px)/1.2 Georgia, serif; color: #a53b5a; font-variant-numeric: tabular-nums; }
+.love-count span { display: block; margin: 10px 0; }
+.love-count small { display: block; color: #875568; line-height: 1.8; }
+.love-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+.love-button { display: inline-block; font-family: inherit; font-size: 14px; font-weight: 600; line-height: 1.5; padding: 12px 20px; border: 1px solid #a53b5a; border-radius: 30px; background: #a53b5a; color: white; text-decoration: none; cursor: pointer; }
+.love-button-light { color: #91334e; background: transparent; }
+.love-button:hover { background: #78213e; color: white; }
+.love-button:focus-visible, .love-note summary:focus-visible { outline: 3px solid #b45a15; outline-offset: 4px; }
+.love-dialog { box-sizing: border-box; width: min(540px, calc(100% - 32px)); max-height: 90dvh; overflow-y: auto; padding: 36px; border: 1px solid #edc8ce; border-radius: 28px; background: #fff8f1; text-align: center; color: #592338; margin: auto; }
+.love-dialog::backdrop { background: #3f172966; backdrop-filter: blur(5px); }
+.love-seal { font-size: 48px; margin: 20px 0; }
+.love-dialog form { margin-top: 24px; }
+.love-note { margin: 22px 0; padding: 18px 22px; border: 1px dashed #dca1af; border-radius: 16px; background: #fff6f4; color: #713448; }
+.love-note summary { cursor: pointer; font-weight: 600; }
+.love-note p { line-height: 1.8; margin: 14px 0 0; }
+.love-wallet { scroll-margin-top: 110px; }
+.love-wallet h2 { font-family: Georgia, serif; font-size: 30px; margin: 12px 0; }
+.love-ticket-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 20px; margin-top: 24px; }
+.love-ticket { border: 1px dashed #cc8c9e; border-radius: 20px; padding: 26px; background: #fff8f1; text-align: left; }
+.love-ticket h3 { margin: 16px 0; font: 26px/1.3 Georgia, serif; color: #7d304a; }
+.love-storage-note { font-size: 12px; color: #875568; }
+.love-empty { padding: 24px; background: #fff8f1; border-radius: 18px; }
+body.love-success { margin: 0; padding: 40px 20px; min-height: 100dvh; box-sizing: border-box; background: #fff0f3; color: #592338; font-family: system-ui, sans-serif; text-align: center; }
+.love-success-main { max-width: 850px; margin: 0 auto; }
+.love-success .love-wallet { padding: 0; text-align: left; }
+.love-success .love-actions { justify-content: center; }
+@media (max-width: 700px) { .love-home { grid-template-columns: 1fr; margin: 20px 16px; padding: 24px; gap: 24px; } .love-wallet { padding: 20px; margin: 24px auto; } .love-dialog { padding: 28px 22px; } }
+@media (prefers-reduced-motion: reduce) { .love-dialog, .love-home, .love-ticket { animation: none; scroll-behavior: auto; } }

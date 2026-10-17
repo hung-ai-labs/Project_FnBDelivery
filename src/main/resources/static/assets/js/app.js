@@ -288,26 +288,11 @@ function updateAuthUI() {
 }
 
 function showLoveGreeting() {
-    const modal = document.createElement('div');
-    modal.id = 'love-greeting';
-    modal.innerHTML = `
-        <div style="font-size: 5rem; margin-bottom: 1rem;">💖</div>
-        <h1>Xin chào em công chúa iu Trần Lê Khánh Chi của anh</h1>
-        <p>Em mún đặt bánh và hoa ạ? Anh chin mời em ấn nút này để đặt ạ!</p>
-        <button class="heart-btn" onclick="closeLoveGreeting()">Bắt đầu đặt hàng ngay ❤️</button>
-        <div class="floating-heart" style="top: 10%; left: 10%;">❤️</div>
-        <div class="floating-heart" style="top: 20%; right: 15%;">💖</div>
-        <div class="floating-heart" style="bottom: 15%; left: 20%;">✨</div>
-    `;
-    document.body.appendChild(modal);
+    if (window.LoveNotes) window.LoveNotes.showGreeting();
 }
 
 function closeLoveGreeting() {
-    const modal = document.getElementById('love-greeting');
-    if (modal) {
-        modal.style.opacity = '0';
-        setTimeout(() => modal.remove(), 500);
-    }
+    document.getElementById('love-welcome')?.close();
 }
 
 async function logout() {
@@ -341,9 +326,11 @@ function renderProducts(products) {
         return;
     }
 
-    const banh = products.filter(p => p.categoryId == 1 || p.category_id == 1);
-    const doAn = products.filter(p => p.categoryId == 2 || p.category_id == 2);
-    const doUong = products.filter(p => p.categoryId == 3 || p.category_id == 3);
+    const classify = window.FoodWheel?.classify || (() => ({ type: 'unknown', taste: 'unknown' }));
+    const savory = products.filter(p => { const c = classify(p); return c.type === 'food' && c.taste === 'savory'; });
+    const sweet = products.filter(p => { const c = classify(p); return c.type === 'food' && c.taste === 'sweet'; });
+    const drinks = products.filter(p => classify(p).type === 'drink');
+    const other = products.filter(p => { const c = classify(p); return c.type === 'unknown' || (c.type === 'food' && !['savory', 'sweet'].includes(c.taste)); });
 
     let html = '';
 
@@ -373,9 +360,10 @@ function renderProducts(products) {
         return gridHtml;
     };
 
-    html += createGrid('Các bánh choa công chúa', banh);
-    html += createGrid('Đồ ăng ngonn choa công chúa', doAn);
-    html += createGrid('Đồ uống choa công chúa iuu', doUong);
+    html += createGrid('Món ăn · Mặn', savory);
+    html += createGrid('Món ăn · Ngọt', sweet);
+    html += createGrid('Đồ uống', drinks);
+    html += createGrid('Các món khác', other);
 
     grid.innerHTML = html;
 }
@@ -455,6 +443,17 @@ function renderDetail(data) {
             </div>
         </div>
     `;
+
+    if (window.LoveNotes) {
+        const note = document.createElement('details');
+        note.className = 'love-note';
+        const summary = document.createElement('summary');
+        summary.textContent = 'Một lời nhắn anh giấu trong món này 💌';
+        const message = document.createElement('p');
+        message.textContent = window.LoveNotes.messageFor(p.name);
+        note.append(summary, message);
+        heroSection.querySelector('.product-desc').after(note);
+    }
 
     if (ingredientList) {
         if (data.ingredients && data.ingredients.length > 0) {

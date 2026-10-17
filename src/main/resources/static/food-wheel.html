@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vòng quay chọn món | Chì &amp; Hung</title>
+    <link rel="stylesheet" href="/assets/css/love.css?v=1">
+    <link rel="stylesheet" href="/assets/css/food-wheel.css?v=2">
+    <script src="/assets/js/food-wheel.js?v=2" defer></script>
+    <link rel="stylesheet" href="/assets/css/quick-nav.css?v=1">
+    <script src="/assets/js/quick-nav.js?v=1" defer></script>
+</head>
+<body class="wheel-page">
+    <header class="wheel-page-header"><a href="/">♡ Tiệm bánh của Chì &amp; Hung</a></header>
+    <main>
+        <section class="food-wheel" id="food-wheel" aria-labelledby="wheel-title">
+            <span class="love-kicker">EM CHỌN KHẨU VỊ · ĐỂ ANH CHỌN MÓN</span>
+            <h1 id="wheel-title">Hôm nay mình ăn gì? 🎡</h1>
+            <p>Ăn mặn hay ăn ngọt, một món ngon hay một ly nước? Chọn nhóm em thích trước, rồi để vòng quay chọn giúp hai đứa nhé.</p>
+            <div class="wheel-filters">
+                <label for="wheel-type">1. Em muốn chọn gì?
+                    <select id="wheel-type"><option value="all">Tất cả món</option><option value="food">Món ăn</option><option value="drink">Đồ uống</option></select>
+                </label>
+                <label for="wheel-taste">2. Khẩu vị hôm nay
+                    <select id="wheel-taste"><option value="all">Tất cả khẩu vị</option><option value="savory">Mặn</option><option value="sweet">Ngọt</option><option value="plain">Không ngọt</option></select>
+                </label>
+            </div>
+            <div class="wheel-layout">
+                <div class="wheel-stage">
+                    <div class="wheel-disc" aria-hidden="true"><span class="wheel-pointer"></span><svg id="wheel-svg" viewBox="0 0 400 400"></svg><span class="wheel-center">♡</span></div>
+                    <button type="button" id="wheel-spin" class="love-button" disabled>Quay giúp em chọn món ♡</button>
+                    <p id="wheel-status" class="wheel-status" role="status" aria-live="polite">Đang lấy thực đơn cho vòng quay…</p>
+                    <button type="button" id="wheel-retry" class="love-button love-button-light" hidden>Tải lại thực đơn</button>
+                </div>
+                <div class="wheel-menu">
+                    <h3>Các món có trong lượt quay</h3>
+                    <p class="love-storage-note">Số trên vòng quay tương ứng với món bên dưới.</p>
+                    <div id="wheel-candidates"></div>
+                </div>
+            </div>
+            <dialog class="wheel-result" id="wheel-result" aria-labelledby="wheel-winner" aria-describedby="wheel-promise">
+                <div class="wheel-fireworks" id="wheel-fireworks" aria-hidden="true"></div>
+                <div class="wheel-result-card">
+                    <span class="love-kicker">TADAA! MÓN NGON CHỌN CHO EM 🎉</span>
+                    <h2 id="wheel-winner"></h2><p id="wheel-promise"></p>
+                    <div class="wheel-result-actions">
+                        <a id="wheel-product-link" class="love-button" autofocus>Em đặt liền ♡</a>
+                        <button id="wheel-again" type="button" class="love-button love-button-light">Em chả thíc âu cho em quay lại i ↻</button>
+                    </div>
+                    <p class="love-storage-note">Em vẫn có thể chỉnh thông tin trước khi xác nhận đặt món.</p>
+                </div>
+            </dialog>
+            <noscript>Em bật JavaScript để dùng vòng quay chọn món nhé.</noscript>
+        </section>
+    </main>
+</body>
+</html>

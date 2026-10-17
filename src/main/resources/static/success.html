@@ -1,76 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đặt hàng thành công!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background: #FDF6EE;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Montserrat', sans-serif;
-            overflow: hidden;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 { font-family: 'Comfortaa', cursive; color: #ff4d6d; font-size: 2.2rem; margin-bottom: 20px; }
-        p { font-size: 1.1rem; color: #333; margin-bottom: 30px; line-height: 1.6; }
-
-        .btn-zone { position: relative; width: 100%; max-width: 600px; height: 120px; display: flex; flex-direction: column; align-items: center; gap: 15px; }
-
-        .btn { padding: 15px 30px; font-size: 1.1rem; font-weight: bold; border: none; border-radius: 50px; cursor: pointer; transition: 0.2s; width: 100%; max-width: 250px; }
-
-        .btn-love { background: #ff4d6d; color: white; position: static; }
-        .btn-hate { background: #636e72; color: white; position: static; }
-
-        .heart { position: absolute; color: #ff4d6d; font-size: 2rem; animation: float 3s infinite; opacity: 0.5; }
-        @keyframes float { 0% { transform: translateY(0); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0); } }
-
-        @media (max-width: 500px) {
-            h1 { font-size: 1.8rem; }
-            p { font-size: 1rem; }
-            .btn { font-size: 1rem; padding: 12px 20px; }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Một lời hẹn dành cho em | Chì &amp; Hung</title>
+    <link rel="stylesheet" href="/assets/css/love.css?v=1">
+    <script src="/assets/js/love.js?v=2" defer></script>
+    <link rel="stylesheet" href="/assets/css/quick-nav.css?v=1">
+    <script src="/assets/js/quick-nav.js?v=1" defer></script>
+    <link rel="stylesheet" href="/assets/css/date-invitation.css?v=1">
+    <script src="/assets/js/date-invitation.js?v=1" defer></script>
 </head>
-<body>
-
-<div class=\"heart\" style=\"top: 10%; left: 15%;\">❤️</div>
-<div class=\"heart\" style=\"top: 20%; right: 20%;\">💖</div>
-
-<h1>Chúc mừng công chúa đặt hàng thành công ạ! 👑</h1>
-<p>
-    Thía hog bít là hum nay công chúa coá iu anh nhìu hog ạ? 🥺<br>
-    (Anh đang đợi câu trả lời từ em đó nha!)
-</p>
-
-<div class="btn-zone">
-    <button class="btn btn-love" onclick="loveAction()">Yêu anh rất nhiều ❤️</button>
-    <button class="btn btn-hate" id="hateBtn" onmouseover="flyAway()">Ghét anh 😠</button>
-</div>
-
-<script>
-    function flyAway() {
-        const btn = document.getElementById('hateBtn');
-        // Tính toán vị trí ngẫu nhiên để nút bay đi
-        const x = Math.random() * (window.innerWidth - btn.clientWidth);
-        const y = Math.random() * (window.innerHeight - btn.clientHeight);
-
-        btn.style.position = 'fixed'; // Chuyển sang fixed để bay khắp màn hình
-        btn.style.left = x + 'px';
-        btn.style.top = y + 'px';
-    }
-
-    function loveAction() {
-        alert("Anh cũng yêu công chúa nhìu nhìu nhìu lắm luôn ạ! 🥰❤️");
-        // Quay về trang chủ sau khi bày tỏ tình cảm
-        window.location.href = "/index.html";
-    }
-</script>
+<body class="love-success" data-love-success>
+    <main class="love-success-main">
+        <span class="love-kicker">TIỆM BÁNH CỦA CHÌ &amp; HUNG</span>
+        <div class="love-seal" aria-hidden="true">💌</div>
+        <h1 id="love-success-title">Những cuộc hẹn của hai đứa ♡</h1>
+        <p id="love-success-message">Một món ngon, một lời hẹn, thêm một kỷ niệm của hai đứa.</p>
+        <p>Mình đã bên nhau <strong data-love-days>…</strong> ngày, từ 22.07.2024.</p>
+        <section class="love-wallet" aria-labelledby="love-wallet-title">
+            <h2 id="love-wallet-title">Phiếu hẹn hò dành cho em</h2>
+            <div id="love-ticket-list" class="love-ticket-list"></div>
+            <p class="love-storage-note">Phiếu được lưu trên trình duyệt này. Tải phiếu về máy để giữ kỷ niệm và gửi anh khi em muốn hẹn nhé.</p>
+        </section>
+        <div class="love-actions"><a class="love-button" href="/">Về tiệm cùng anh ♡</a></div>
+    </main>
 </body>
 </html>
