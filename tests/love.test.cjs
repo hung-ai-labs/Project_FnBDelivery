@@ -33,3 +33,13 @@ test('provides individual notes for all four new dishes and a fallback', () => {
     assert.equal(new Set(names.map(love.messageFor)).size, 4);
     assert.ok(love.messageFor('Món mới').includes('anh thương em'));
 });
+test('creates an invitation without an order or existing wallet and saves only after confirmation', () => {
+    const store = storage();
+    const ticket = love.createAnytimeTicket('new-date', new Date('2026-10-17T05:00:00Z'));
+    assert.equal(ticket.id, 'date-new-date');
+    assert.equal(ticket.reward, 1);
+    assert.equal(love.readWallet(store).length, 0);
+    love.saveDateTicket(store, ticket);
+    love.saveDateTicket(store, ticket);
+    assert.deepEqual(love.readWallet(store), [ticket]);
+});

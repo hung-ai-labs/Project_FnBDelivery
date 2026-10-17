@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/premium.css" /> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/love.css?v=1">
-    <script src="/assets/js/love.js?v=2" defer></script>
+    <script src="/assets/js/love.js?v=3" defer></script>
     <link rel="stylesheet" href="/assets/css/food-wheel.css?v=2">
     <script src="/assets/js/food-wheel.js?v=2" defer></script>
     <link rel="stylesheet" href="/assets/css/quick-nav.css?v=1">
@@ -147,9 +147,13 @@
         </section>
     </div>
     <section class="love-wallet" id="our-tickets" aria-labelledby="love-wallet-title">
-        <span class="love-kicker">MỘT ĐƠN MÓN NGON, THÊM MỘT LỜI HẸN</span>
+        <span class="love-kicker">MÌNH HẸN HÒ BẤT CỨ KHI NÀO EM MUỐN</span>
         <h2 id="love-wallet-title">Những cuộc hẹn đang chờ hai đứa</h2>
-        <p>Em chọn ngày, mình cùng thực hiện nhé. ♡</p>
+        <p>Em muốn hẹn ngày nào cũng được, mình cùng chọn nơi đi ăn hoặc đi chơi nhé. ♡</p>
+        <div class="love-actions">
+            <button type="button" class="love-button" data-love-date>Em muốn hẹn hò ♡</button>
+        </div>
+        <p id="love-date-status" class="love-invitation-sent" role="status" aria-live="polite"></p>
         <div class="love-ticket-list" id="love-ticket-list"></div>
         <p class="love-storage-note">Phiếu được lưu trên trình duyệt này. Em có thể tải phiếu về máy để giữ làm kỷ niệm.</p>
     </section>

@@ -40,6 +40,25 @@
         storage.setItem(WALLET_KEY, JSON.stringify(wallet));
         return ticket;
     }
+    function createAnytimeTicket(id, now = new Date()) {
+        return { id: 'date-' + id, reward: 1, createdAt: now.toISOString() };
+    }
+    function saveDateTicket(storage, ticket) {
+        const wallet = readWallet(storage);
+        if (!wallet.some(existing => existing.id === ticket.id)) wallet.push(ticket);
+        storage.setItem(WALLET_KEY, JSON.stringify(wallet));
+    }
+    function openAnytimeDate() {
+        const ticket = createAnytimeTicket(window.crypto.randomUUID());
+        window.DateInvitations.open(ticket, rewards[ticket.reward], values => {
+            try {
+                saveDateTicket(window.localStorage, ticket);
+                renderTickets();
+            } catch (_) { /* Sending a date invitation does not require browser storage. */ }
+            const status = document.getElementById('love-date-status');
+            if (status) status.textContent = `Đã gửi lời hẹn cho ngày ${values.date.split('-').reverse().join('/')} lúc ${values.time}. ♡`;
+        });
+    }
     function showGreeting() {
         if (document.getElementById('love-welcome')) return;
         const dialog = document.createElement('dialog');
@@ -71,7 +90,7 @@
         if (!wallet.length) {
             const empty = document.createElement('p');
             empty.className = 'love-empty';
-            empty.textContent = 'Sau mỗi lần đặt món thành công, một phiếu hẹn hò sẽ chờ em ở đây. Mình cùng tạo thêm kỷ niệm nhé.';
+            empty.textContent = 'Chưa có phiếu được lưu. Em vẫn có thể bấm “Em muốn hẹn hò” để chọn ngày và gửi lời hẹn ngay nhé. ♡';
             list.appendChild(empty);
         }
         wallet.slice().reverse().forEach(ticket => {
@@ -105,7 +124,7 @@
             let confirmed = false;
             try { confirmed = wallet.some(t => t.id === sessionStorage.getItem(LAST_KEY)); } catch (_) {}
             document.getElementById('love-success-title').textContent = confirmed ? 'Anh nhận được đơn của em rồi! ♡' : 'Những cuộc hẹn của hai đứa ♡';
-            document.getElementById('love-success-message').textContent = confirmed ? 'Đồ ăn để anh lo. Còn đây là một lời hẹn nhỏ dành cho em — em chọn ngày, mình cùng thực hiện nhé.' : 'Các phiếu đã lưu trên trình duyệt này sẽ ở đây. Ghé tiệm và đặt món để nhận thêm một lời hẹn nhé.';
+            document.getElementById('love-success-message').textContent = confirmed ? 'Đồ ăn để anh lo. Còn đây là một lời hẹn nhỏ dành cho em — em chọn ngày, mình cùng thực hiện nhé.' : 'Em có thể gửi lời hẹn bất cứ lúc nào. Chọn ngày, nơi đi ăn hoặc đi chơi để hai đứa cùng tạo thêm kỷ niệm nhé. ♡';
         }
     }
     function recordSuccessfulOrder() {
@@ -118,12 +137,13 @@
             try { window.sessionStorage.removeItem(LAST_KEY); } catch (_) {}
         }
     }
-    const api = { daysTogether, messageFor, readWallet, issueTicket, showGreeting, recordSuccessfulOrder };
+    const api = { daysTogether, messageFor, readWallet, issueTicket, createAnytimeTicket, saveDateTicket, showGreeting, recordSuccessfulOrder };
     if (typeof module !== 'undefined' && module.exports) module.exports = api;
     root.LoveNotes = api;
     if (typeof document !== 'undefined') document.addEventListener('DOMContentLoaded', () => {
         updateCounter(); setInterval(updateCounter, 60000);
         document.addEventListener('visibilitychange', updateCounter);
+        document.querySelectorAll('[data-love-date]').forEach(button => button.addEventListener('click', openAnytimeDate));
         document.querySelectorAll('[data-love-open]').forEach(button => button.addEventListener('click', showGreeting));
         if (document.getElementById('love-home')) {
             try {
