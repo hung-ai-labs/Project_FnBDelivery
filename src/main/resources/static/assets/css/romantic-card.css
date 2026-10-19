@@ -1,0 +1,36 @@
+.romantic-page { margin:0; background:#fff7f3; color:#592338; font:15px/1.65 system-ui,sans-serif; }
+.romantic-header { display:flex; align-items:center; gap:25px; padding:24px 4vw; border-bottom:1px solid #f0d9df; }
+.romantic-header a { color:#91334e; font:600 23px Georgia,serif; text-decoration:none; }
+.romantic-header span { color:#8f6b79; font-size:12px; }
+.romantic-main { max-width:1320px; margin:auto; padding:50px 28px; }
+.romantic-heading { max-width:700px; margin-bottom:32px; }
+.romantic-heading h1 { font:normal clamp(36px,5vw,56px)/1.1 Georgia,serif; margin:12px 0 20px; }
+.romantic-heading p { color:#875568; }
+.romantic-workspace { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.05fr); gap:30px; align-items:start; }
+.romantic-editor { background:white; border:1px solid #efd5dc; border-radius:24px; padding:28px; }
+.romantic-editor fieldset { border:0; padding:0; margin:0; min-width:0; }
+.romantic-section-title { font:normal 22px Georgia,serif; color:#91334e; margin:28px 0 18px; }
+legend.romantic-section-title { margin-top:0; }
+.romantic-editor label { display:block; font-size:13px; font-weight:600; margin-bottom:16px; }
+.romantic-editor input,.romantic-editor textarea,.romantic-editor select { display:block; box-sizing:border-box; width:100%; min-width:0; margin-top:7px; padding:12px; border:1px solid #e4c3ce; border-radius:12px; background:#fffcfa; color:#592338; font:15px/1.6 system-ui,sans-serif; }
+.romantic-editor textarea { resize:vertical; }
+.romantic-editor input:focus-visible,.romantic-editor textarea:focus-visible,.romantic-editor select:focus-visible { outline:3px solid #b45a15; outline-offset:2px; }
+.romantic-fields { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:14px; }
+.romantic-plan { padding:16px; border:1px dashed #e0bdc9; border-radius:16px; margin-bottom:14px; background:#fff8f8; }
+.romantic-plan-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+.romantic-plan label:last-child { margin-bottom:0; }
+.romantic-hint { color:#8f6b79; font-size:12px; line-height:1.7; }
+.romantic-text-button { background:transparent; color:#91334e; border:0; text-decoration:underline; cursor:pointer; font:inherit; font-size:12px; }
+.romantic-preview { position:sticky; top:28px; border:1px solid #ecd4dd; border-radius:24px; overflow:hidden; background:#f8e4eb; }
+.romantic-preview-heading { display:flex; align-items:center; justify-content:space-between; padding:16px 20px; gap:12px; background:white; }
+#preview-state { font-size:11px; color:#875568; }
+#card-preview { display:block; border:0; width:100%; height:780px; background:#fff7f3; }
+.romantic-delivery { margin-top:28px; padding-top:24px; border-top:1px solid #efd5dc; }
+.romantic-delivery .love-button { display:block; width:100%; box-sizing:border-box; margin-top:12px; text-align:center; font:600 14px/1.6 system-ui,sans-serif; }
+.romantic-editor button:disabled { opacity:.5; cursor:not-allowed; }
+#card-status { font-size:14px; color:#41704d; line-height:1.7; }
+#card-status.is-error { color:#a62d49; }
+.romantic-page [hidden] { display:none !important; }
+.romantic-page .quick-nav { top:20px; }
+@media(max-width:850px) { .romantic-workspace { grid-template-columns:1fr; } .romantic-preview { position:static; } .romantic-header span { display:none; } .romantic-main { padding:60px 16px 28px; } .romantic-editor { padding:22px; } #card-preview { height:850px; } .romantic-page .quick-nav { top:76px; } }
+@media(max-width:450px) { .romantic-fields { grid-template-columns:1fr; gap:0; } .romantic-header a { font-size:21px; } }

@@ -17,4 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { nav.open = false; }));
     document.addEventListener('click', event => { if (!nav.contains(event.target)) nav.open = false; });
     document.body.appendChild(nav);
+    fetch('/api/auth/me', {credentials:'include'}).then(response => response.ok ? response.json() : null).then(user => {
+        if ((user?.user_name || user?.username || '').toLowerCase() !== 'hung452005') return;
+        const link = document.createElement('a'); link.href = '/anh-muon-hen-ho.html';
+        link.innerHTML = '♥ <span>Anh muốn hẹn hò<small>Viết một tấm thiệp cho em</small></span>';
+        if (window.location.pathname.endsWith('/anh-muon-hen-ho.html')) {
+            nav.querySelectorAll('[aria-current]').forEach(item => item.removeAttribute('aria-current'));
+            link.setAttribute('aria-current','page');
+        }
+        nav.querySelector('nav').appendChild(link);
+    }).catch(() => {});
 });

@@ -37,10 +37,14 @@ public class DateInvitationMailer {
     }
 
     public void send(String text, String idempotencyKey) throws IOException, InterruptedException {
-        String body = json.writeValueAsString(Map.of(
-                "from", "Tiệm bánh của Chì và Hung <onboarding@resend.dev>",
-                "to", List.of(recipient), "subject", "Công chúa gửi anh một lời hẹn hò ♡", "text", text));
+        sendPayload(Map.of("from", "Tiệm bánh Chì và Hung <onboarding@resend.dev>",
+                "to", List.of(recipient), "subject", "Công chúa gửi anh một lời hẹn hò ♡", "text", text), idempotencyKey);
+    }
+
+    String sendPayload(Map<String, Object> payload, String idempotencyKey) throws IOException, InterruptedException {
+        String body = json.writeValueAsString(payload);
         HttpRequest request = HttpRequest.newBuilder(endpoint).timeout(Duration.ofSeconds(20))
+                .header("User-Agent", "FnBDelivery/1.0")
                 .header("Authorization", "Bearer " + apiKey)
                 .header("Content-Type", "application/json")
                 .header("Idempotency-Key", idempotencyKey)
@@ -54,5 +58,6 @@ public class DateInvitationMailer {
             // Never expose provider responses or credentials to the browser.
             throw new IOException("Email provider did not accept the invitation");
         }
+        return receipt.path("id").asText();
     }
 }

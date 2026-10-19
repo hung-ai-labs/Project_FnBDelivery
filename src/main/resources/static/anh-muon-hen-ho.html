@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Anh muốn hẹn hò | Chì &amp; Hung</title>
+    <link rel="stylesheet" href="/assets/css/love.css?v=1">
+    <link rel="stylesheet" href="/assets/css/quick-nav.css?v=2">
+    <link rel="stylesheet" href="/assets/css/romantic-card.css?v=1">
+    <script src="/assets/js/quick-nav.js?v=2" defer></script>
+    <script src="/assets/js/romantic-card.js?v=1" defer></script>
+</head>
+<body class="romantic-page">
+<header class="romantic-header"><a href="/">♡ Chì &amp; Hung</a><span>Một lời mời, một kỷ niệm mới.</span></header>
+<main class="romantic-main">
+    <div class="romantic-heading"><span class="love-kicker">DÀNH RIÊNG CHO HUNG452005</span><h1>Anh muốn hẹn hò.</h1><p>Viết một lời mời thật riêng. Thiệp bên cạnh sẽ thay đổi theo những điều anh muốn gửi em.</p></div>
+    <p id="card-access" role="status">Đang kiểm tra tài khoản…</p>
+    <div id="card-workspace" class="romantic-workspace" hidden>
+        <form id="romantic-form" class="romantic-editor">
+            <fieldset id="card-fields">
+                <legend class="romantic-section-title">01 · Lời anh muốn nói</legend>
+                <label>Tiêu đề thiệp<input name="title" maxlength="100" value="Anh muốn hẹn hò cùng em" required></label>
+                <label>Lời chào<input name="greeting" maxlength="100" value="Khánh Chi ơi,"></label>
+                <label>Lời mời<textarea name="message" rows="4" maxlength="2500" required>Anh muốn dành một buổi thật trọn vẹn cho hai đứa. Mình cùng ăn món ngon, đi một nơi em thích và kể nhau nghe những chuyện nhỏ trong ngày nhé.</textarea></label>
+                <div class="romantic-section-title">02 · Giữ cho nhau một ngày</div>
+                <div class="romantic-fields"><label>Ngày hẹn<input name="date" type="date" required></label><label>Giờ gặp (Việt Nam)<input name="time" type="time" value="18:00" required></label></div>
+                <label>Địa điểm đi ăn<input name="restaurant" maxlength="200" placeholder="Tên quán và địa chỉ"></label>
+                <label>Địa điểm đi chơi<input name="outing" maxlength="200" placeholder="Nơi mình đi dạo, xem phim…"></label>
+                <div class="romantic-section-title">03 · Kế hoạch của anh</div>
+                <p class="romantic-hint">Tối đa 8 mốc, theo thứ tự giờ trong ngày. Anh có thể thêm hoặc bỏ từng mốc.</p>
+                <div id="card-plans"></div><button type="button" id="add-card-plan" class="love-button love-button-light">+ Thêm mốc thời gian</button>
+                <div class="romantic-section-title">04 · Dấu ấn của hai đứa</div>
+                <label>Màu thiệp<select name="theme"><option value="rose">Hồng tình yêu</option><option value="lavender">Tím dịu dàng</option><option value="peach">Cam đào ấm áp</option></select></label>
+                <label>Ảnh cho thiệp (không bắt buộc)<input id="card-photo" type="file" accept="image/jpeg,image/png"></label>
+                <p class="romantic-hint">JPG hoặc PNG, tối đa 3 MB. Ảnh được đính kèm trong email để Chi xem ngay trong thiệp.</p>
+                <button type="button" id="remove-card-photo" class="romantic-text-button" hidden>Bỏ ảnh đã chọn</button>
+                <label>Lời kết<textarea name="closing" rows="3" maxlength="1000">Không cần một dịp đặc biệt, chỉ cần là cùng em. Anh mong đến buổi hẹn của hai đứa. ♥</textarea></label>
+                <label>Chữ ký<input name="signature" maxlength="100" value="Hùng của iem"></label>
+            </fieldset>
+            <div class="romantic-delivery"><strong>Thử trước, gửi em sau.</strong><p id="card-recipient"></p><p id="card-config-note" class="romantic-hint"></p>
+                <button id="card-test" class="love-button love-button-light" type="button">Gửi thiệp thử cho anh 💌</button>
+                <button id="card-send" class="love-button" type="submit">Gửi thiệp cho Chi ♥</button>
+                <p id="card-status" role="status" aria-live="polite"></p>
+            </div>
+        </form>
+        <aside class="romantic-preview"><div class="romantic-preview-heading"><span class="love-kicker">THIỆP CỦA ANH · XEM TRƯỚC</span><span id="preview-state" role="status"></span></div><iframe id="card-preview" title="Thiệp hẹn hò xem trước" sandbox="" referrerpolicy="no-referrer"></iframe></aside>
+    </div>
+</main>
+</body></html>
