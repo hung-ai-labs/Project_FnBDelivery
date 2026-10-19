@@ -79,18 +79,26 @@
                 if(response.status===401||response.redirected)throw Error('Phiên đăng nhập đã hết. Đăng nhập lại rồi gửi nhé.');
                 const result=await response.json();if(!response.ok||!result.success)throw Error(result.message||'Chưa gửi được thiệp.');
                 status.textContent=result.message;
-            }catch(e){status.classList.add('is-error');status.textContent=e.name==='AbortError'?'Chưa xác nhận được email đã gửi. Giữ nguyên nội dung và thử lại nhé.':e.message;}
-            finally{clearTimeout(timeout);sending=false;fields.disabled=false;test.disabled=false;send.disabled=!settings.canSendLive;}
+            }catch(e){status.classList.add('is-error');status.textContent=e.name==='AbortError'?'Chưa xác nhận được email đã gửi. Kiểm tra thư Đã gửi trong Gmail trước khi thử lại nhé.':e.message;}
+            finally{clearTimeout(timeout);sending=false;fields.disabled=false;test.disabled=sending||settings.canSendTest===false;send.disabled=!settings.canSendLive;}
         }
         test.addEventListener('click',()=>deliver(true));form.addEventListener('submit',e=>{e.preventDefault();deliver(false);});
-        try{
+        async function refreshSettings(){
             const response=await fetch('/api/romantic-cards/settings',{credentials:'include'});
             if(response.status===401||response.redirected)throw Error('Anh đăng nhập bằng Hung452005 để viết thiệp nhé.');
             if(response.status===403)throw Error('Mục này dành riêng cho tài khoản Hung452005.');
             if(!response.ok)throw Error('Chưa tải được cấu hình gửi thiệp.');
             settings=await response.json();document.getElementById('card-recipient').textContent=`Thử: ${settings.testRecipient} · Thiệp thật: ${settings.recipient}`;
-            document.getElementById('card-config-note').textContent=settings.canSendLive?'Xem trước kỹ rồi gửi thử cho anh trước khi gửi thiệp thật.':'Đã có địa chỉ nhận của Chi. Cần cấu hình địa chỉ gửi thuộc tên miền xác minh trên Resend để bật gửi thật; nút gửi thử vẫn dùng được.';
-            send.disabled=!settings.canSendLive;access.hidden=true;document.getElementById('card-workspace').hidden=false;
+            document.getElementById('card-gmail-connect').hidden=settings.provider!=='gmail';
+            test.disabled=sending||settings.canSendTest===false;
+            document.getElementById('card-gmail-connect').textContent=settings.canSendLive?'Kết nối lại Gmail':'Kết nối Gmail của anh';
+            document.getElementById('card-config-note').textContent=settings.provider==='gmail'?(settings.canSendLive?'Đã kết nối Gmail của anh. Thiệp gửi từ hungmk2005@gmail.com với tên Tiệm bánh Chì và Hung.':settings.gmailConfigured?'Kết nối Gmail của anh để bật gửi thiệp. Google sẽ hỏi quyền gửi email.':'Cần thiết lập Google OAuth trước. Xem hướng dẫn Gmail API trong tài liệu dự án.') : settings.canSendLive?'Xem trước kỹ rồi gửi thử cho anh trước khi gửi thiệp thật.':'Đã có địa chỉ nhận của Chi. Cần cấu hình địa chỉ gửi thuộc tên miền xác minh trên Resend để bật gửi thật; nút gửi thử vẫn dùng được.';
+            send.disabled=sending||!settings.canSendLive;
+        }
+        window.addEventListener('focus',()=>{if(settings&&!sending)refreshSettings().catch(()=>{});});
+        try{
+            await refreshSettings();
+            access.hidden=true;document.getElementById('card-workspace').hidden=false;
             addPlan('18:30','Mình cùng ăn tối','');addPlan('20:00','Đi dạo và kể nhau nghe một ngày của mình','');
             clearTimeout(previewTimer);updatePreview();
         }catch(e){access.textContent=e.message;const link=document.createElement('a');link.href='/login.html';link.textContent=' Mở đăng nhập';access.appendChild(link);}

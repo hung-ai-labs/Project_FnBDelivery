@@ -37,6 +37,6 @@ public class RomanticCardController {
         catch(InterruptedException e) {Thread.currentThread().interrupt();return failed();}
         catch(IOException e) {return failed();}
     }
-    private ResponseEntity<ApiResponse> failed() {return ResponseEntity.status(503).body(new ApiResponse(false,"Chưa xác nhận gửi được email. Kiểm tra cấu hình Resend hoặc giữ nguyên nội dung và thử lại."));}
+    private ResponseEntity<ApiResponse> failed() {return ResponseEntity.status(503).body(new ApiResponse(false,"Chưa xác nhận gửi được email. Với Gmail, kiểm tra thư Đã gửi và kết nối Gmail trước khi thử lại để tránh gửi trùng."));}
     @ExceptionHandler(IllegalArgumentException.class) public ResponseEntity<ApiResponse> invalid(IllegalArgumentException e) { return ResponseEntity.badRequest().body(new ApiResponse(false,e.getMessage())); }
 }

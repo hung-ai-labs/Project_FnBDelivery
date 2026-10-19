@@ -11,8 +11,9 @@ import static org.mockito.Mockito.*;
 
 class RomanticCardServiceTest {
     private final UsersRepository users=mock(UsersRepository.class);
+    private final GmailCardMailer gmail=mock(GmailCardMailer.class);
     private final DateInvitationMailer mailer=mock(DateInvitationMailer.class);
-    private RomanticCardService service(String from){return new RomanticCardService(users,new RomanticCardTemplate(),mailer,"Khanhchiinekk@gmail.com",from);}
+    private RomanticCardService service(String from){return new RomanticCardService(users,new RomanticCardTemplate(),mailer,gmail,"resend","Khanhchiinekk@gmail.com",from);}
     private void user(String username,String role){var u=new Users();u.setUsername(username);u.setRole(role);when(users.findById(7L)).thenReturn(Optional.of(u));}
     @Test void limitsAccessToHungEvenWhenHisRoleIsUserAndRejectsOtherAdmins(){
         user("Hung452005","USER");service("x").requireOwner(7L);
@@ -29,6 +30,15 @@ class RomanticCardServiceTest {
         assertEquals(java.util.List.of("hungmk2005@gmail.com"),payload.getAllValues().get(0).get("to"));
         assertEquals(java.util.List.of("Khanhchiinekk@gmail.com"),payload.getAllValues().get(1).get("to"));
         assertTrue(payload.getValue().containsKey("html"));assertTrue(payload.getValue().containsKey("text"));
+    }
+    @Test void gmailRequiresConnectionThenRoutesTestAndLiveWithoutResend() throws Exception {
+        user("Hung452005","USER");
+        var service=new RomanticCardService(users,new RomanticCardTemplate(),mailer,gmail,"gmail","Khanhchiinekk@gmail.com","ignored");
+        assertFalse(service.canSendLive());assertThrows(IllegalArgumentException.class,()->service.send(RomanticCardFixtures.card(null),7L,true));
+        when(gmail.connected()).thenReturn(true);when(gmail.send(anyMap(),anyString())).thenReturn("gmail-id");
+        assertTrue(service.canSendLive());service.send(RomanticCardFixtures.card(null),7L,true);service.send(RomanticCardFixtures.card(null),7L,false);
+        verify(gmail).send(argThat(p->p.get("to").equals(java.util.List.of("hungmk2005@gmail.com"))),contains("test/"));
+        verify(gmail).send(argThat(p->p.get("to").equals(java.util.List.of("Khanhchiinekk@gmail.com"))),contains("live/"));verifyNoInteractions(mailer);
     }
     @Test void sandboxSenderCannotPretendToSendToChi() {
         user("Hung452005","USER");var service=service("Tiệm bánh <onboarding@resend.dev>");
