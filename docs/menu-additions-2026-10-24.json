@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Mì Ý",
+    "price": 35,
+    "categoryId": 2,
+    "discount": 0,
+    "description": "Mì Ý sốt bò bằm cà chua, sợi mì dai mềm quyện sốt đậm đà và phô mai thơm. Một đĩa mì ấm nóng dành cho bữa hẹn của hai đứa.",
+    "imageUrl": "https://www.jocooks.com/wp-content/uploads/2025/08/creamy-spaghetti-bolognese-social.jpg",
+    "imageSource": "https://www.jocooks.com/recipes/spaghetti-bolognese/"
+  },
+  {
+    "name": "Mì sốt kem nấm",
+    "price": 40,
+    "categoryId": 2,
+    "discount": 0,
+    "description": "Mì sợi dẹt phủ sốt kem béo dịu, nấm xào thơm và chút phô mai. Món mặn mềm mượt cho những hôm em muốn được chiều chuộng.",
+    "imageUrl": "https://www.recipetineats.com/tachyon/2019/09/Creamy-Mushroom-Pasta_4.jpg",
+    "imageSource": "https://www.recipetineats.com/creamy-mushroom-pasta/"
+  },
+  {
+    "name": "Sủi cảo tôm thịt",
+    "price": 30,
+    "categoryId": 2,
+    "discount": 0,
+    "description": "Sủi cảo nhân tôm thịt đầy đặn, vỏ mềm với mặt áp chảo vàng thơm, ăn kèm nước chấm đậm vị. Gắp cho em một chiếc, dành anh một chiếc nhé.",
+    "imageUrl": "https://bepmina.vn/wp-content/uploads/2022/10/cach-lam-sui-cao-tom-thit.jpeg",
+    "imageSource": "https://bepmina.vn/cach-lam-banh/cach-lam-sui-cao-tom-thit/"
+  },
+  {
+    "name": "Há cảo tôm",
+    "price": 30,
+    "categoryId": 2,
+    "discount": 0,
+    "description": "Há cảo hấp nóng với lớp vỏ mỏng mềm và nhân tôm ngọt tự nhiên. Từng chiếc nhỏ xinh, vừa đủ cho một buổi ăn ngon cùng nhau.",
+    "imageUrl": "https://storage.googleapis.com/onelife-public/blog.onelife.vn/2021/10/cach-lam-ha-cao-tom-hap-mon-chinh-328209168351.jpg",
+    "imageSource": "https://kingfoodmart.com/bai-viet/cong-thuc-nau-an/ha-cao-tom-hap"
+  },
+  {
+    "name": "Súp lơ",
+    "price": 15,
+    "categoryId": 2,
+    "discount": 0,
+    "description": "Súp lơ xanh nướng tỏi, điểm chút phô mai và chanh, giòn mềm và thơm nhẹ. Thêm một đĩa rau xanh cho bữa ăn của hai đứa trọn vẹn hơn.",
+    "imageUrl": "https://www.recipetineats.com/tachyon/2014/09/Magic-Broccoli_2.jpg",
+    "imageSource": "https://www.recipetineats.com/magic-broccoli/"
+  }
+]

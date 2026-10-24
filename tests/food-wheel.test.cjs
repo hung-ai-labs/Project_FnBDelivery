@@ -66,3 +66,10 @@ test('reroll picks another product when alternatives exist, and handles a single
     assert.equal(wheel.chooseNextIndex(1,0),0);
     assert.equal(wheel.chooseNextIndex(0),-1);
 });
+
+// Cream in a savory pasta name must not move it into desserts.
+test('new pasta, dumplings and broccoli all appear in savory food spins', () => {
+    const dishes = ['Mì Ý', 'Mì sốt kem nấm', 'Sủi cảo tôm thịt', 'Há cảo tôm', 'Súp lơ'].map(name => ({name}));
+    assert.equal(wheel.filterProducts(dishes, 'food', 'savory').length, 5);
+    assert.equal(wheel.filterProducts(dishes, 'food', 'sweet').length, 0);
+});

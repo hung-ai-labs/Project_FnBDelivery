@@ -8,8 +8,8 @@
     function classify(product) {
         const name = fold(product.name);
         const drink = /\b(tra|ca phe|coffee|latte|nuoc|sinh to|juice|smoothie|soda|milk tea|cacao|cocoa|sua tuoi|coco matcha|bac xiu)\b/;
-        const food = /\b(banh|cake|cheesecake|chesse|burrito|thit|heo|com|mi|pizza|yen mach|dorayaki|chocolate)\b/;
-        const savory = /\b(thit|heo|bo|ga|xuc xich|burrito|pizza|man|cha|ca|hai san)\b/;
+        const food = /\b(banh|cake|cheesecake|chesse|burrito|thit|heo|com|mi|sui cao|ha cao|sup lo|pizza|yen mach|dorayaki|chocolate)\b/;
+        const savory = /\b(thit|heo|bo|ga|xuc xich|burrito|pizza|mi y|mi sot kem nam|sui cao|ha cao|sup lo|man|cha|ca|hai san)\b/;
         const sweet = /\b(ngot|cheesecake|chesse|bong lan|que cuon|dorayaki|chuoi|socola|chocolate|matcha|yen mach ngam|cookie|pancake|kem|banh flan)\b/;
         const explicitType = validTypes.includes(product.type) ? product.type : null;
         // Food names take precedence over beverage ingredients, e.g. bánh trà xanh.
