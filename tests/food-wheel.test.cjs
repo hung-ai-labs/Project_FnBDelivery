@@ -69,7 +69,17 @@ test('reroll picks another product when alternatives exist, and handles a single
 
 // Cream in a savory pasta name must not move it into desserts.
 test('new pasta, dumplings and broccoli all appear in savory food spins', () => {
-    const dishes = ['Mì Ý', 'Mì sốt kem nấm', 'Sủi cảo tôm thịt', 'Há cảo tôm', 'Súp lơ'].map(name => ({name}));
-    assert.equal(wheel.filterProducts(dishes, 'food', 'savory').length, 5);
+    const dishes = ['Mì Ý', 'Mì sốt kem nấm', 'Sủi cảo tôm thịt', 'Há cảo tôm súp lơ'].map(name => ({name}));
+    assert.equal(wheel.filterProducts(dishes, 'food', 'savory').length, 4);
     assert.equal(wheel.filterProducts(dishes, 'food', 'sweet').length, 0);
+});
+
+test('homepage and wheel load the same current food classifier', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const versions = ['index.html', 'food-wheel.html'].map(file => {
+        const html = fs.readFileSync(path.join(__dirname, '../src/main/resources/static', file), 'utf8');
+        return html.match(/food-wheel\.js\?v=(\d+)/)[1];
+    });
+    assert.equal(versions[0], versions[1]);
 });

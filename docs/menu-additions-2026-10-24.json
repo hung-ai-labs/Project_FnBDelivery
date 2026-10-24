@@ -27,21 +27,12 @@
     "imageSource": "https://bepmina.vn/cach-lam-banh/cach-lam-sui-cao-tom-thit/"
   },
   {
-    "name": "Há cảo tôm",
+    "name": "Há cảo tôm súp lơ",
     "price": 30,
     "categoryId": 2,
     "discount": 0,
-    "description": "Há cảo hấp nóng với lớp vỏ mỏng mềm và nhân tôm ngọt tự nhiên. Từng chiếc nhỏ xinh, vừa đủ cho một buổi ăn ngon cùng nhau.",
+    "description": "Há cảo hấp nóng với lớp vỏ mỏng mềm, nhân tôm tươi quyện súp lơ xanh băm nhỏ, ngọt tự nhiên và thơm dịu. Từng chiếc nhỏ xinh dành cho bữa ăn ấm áp của hai đứa.",
     "imageUrl": "https://storage.googleapis.com/onelife-public/blog.onelife.vn/2021/10/cach-lam-ha-cao-tom-hap-mon-chinh-328209168351.jpg",
     "imageSource": "https://kingfoodmart.com/bai-viet/cong-thuc-nau-an/ha-cao-tom-hap"
-  },
-  {
-    "name": "Súp lơ",
-    "price": 15,
-    "categoryId": 2,
-    "discount": 0,
-    "description": "Súp lơ xanh nướng tỏi, điểm chút phô mai và chanh, giòn mềm và thơm nhẹ. Thêm một đĩa rau xanh cho bữa ăn của hai đứa trọn vẹn hơn.",
-    "imageUrl": "https://www.recipetineats.com/tachyon/2014/09/Magic-Broccoli_2.jpg",
-    "imageSource": "https://www.recipetineats.com/magic-broccoli/"
   }
 ]
