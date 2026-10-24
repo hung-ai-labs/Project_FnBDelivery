@@ -22,8 +22,8 @@ public class DateInvitationMailer {
     private final String recipient;
 
     @org.springframework.beans.factory.annotation.Autowired
-    public DateInvitationMailer(ObjectMapper json, @Value("${RESEND_API_KEY}") String apiKey,
-                                @Value("${USERNAME_EMAIL}") String recipient) {
+    public DateInvitationMailer(ObjectMapper json, @Value("${RESEND_API_KEY:}") String apiKey,
+                                @Value("${USERNAME_EMAIL:hungmk2005@gmail.com}") String recipient) {
         this(json, HttpClient.newBuilder().connectTimeout(Duration.ofSeconds(10)).build(),
                 URI.create("https://api.resend.com/emails"), apiKey, recipient);
     }
@@ -42,6 +42,7 @@ public class DateInvitationMailer {
     }
 
     String sendPayload(Map<String, Object> payload, String idempotencyKey) throws IOException, InterruptedException {
+        if (apiKey == null || apiKey.isBlank()) throw new IOException("Resend is not configured for this notification");
         String body = json.writeValueAsString(payload);
         HttpRequest request = HttpRequest.newBuilder(endpoint).timeout(Duration.ofSeconds(20))
                 .header("User-Agent", "FnBDelivery/1.0")

@@ -35,3 +35,7 @@ Gmail không có idempotency key cho API gửi: app lưu mã gửi trong databas
 - https://developers.google.com/workspace/gmail/api/guides/sending
 - https://developers.google.com/workspace/gmail/api/auth/scopes
 - https://developers.google.com/identity/protocols/oauth2/web-server
+
+## Lỗi deploy thiếu USERNAME_EMAIL
+
+Bản sửa cấu hình mail cũ cho phép ứng dụng Gmail khởi động mà không có `USERNAME_EMAIL`, `PASSWORD_EMAIL` hoặc `RESEND_API_KEY`. Người nhận mặc định của thông báo cũ là `hungmk2005@gmail.com`. Các thông báo đơn hàng/yêu cầu món và phiếu từ phía Chi vẫn cần `RESEND_API_KEY`; thiếu khóa sẽ không gửi được các thông báo này. Thiệp từ Hung dùng kết nối Gmail riêng. Sau khi lấy bản vá, Render cần deploy **latest commit**, thay vì redeploy commit Gmail đầu tiên `ac02faf`.
