@@ -59,7 +59,8 @@ public class SecurityConfig {
                         (request, response, exception) -> response.sendError(401),
                         new org.springframework.security.web.util.matcher.OrRequestMatcher(
                                 new org.springframework.security.web.util.matcher.AntPathRequestMatcher("/api/date-invitations"),
-                                new org.springframework.security.web.util.matcher.AntPathRequestMatcher("/api/romantic-cards/**"))))
+                                new org.springframework.security.web.util.matcher.AntPathRequestMatcher("/api/romantic-cards/**"),
+                                new org.springframework.security.web.util.matcher.AntPathRequestMatcher("/api/hanoi-wheel/**"))))
                 .formLogin(form -> form.loginPage("/login.html").permitAll())
                 .logout(logout -> logout
                         .logoutUrl("/api/auth/logout")

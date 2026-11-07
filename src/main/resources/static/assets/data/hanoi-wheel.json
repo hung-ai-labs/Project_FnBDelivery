@@ -1,0 +1,1538 @@
+[
+  {
+    "id": "eat-1",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Phở bò"
+  },
+  {
+    "id": "eat-2",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Phở gà"
+  },
+  {
+    "id": "eat-3",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Phở cuốn"
+  },
+  {
+    "id": "eat-4",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Phở chiên phồng"
+  },
+  {
+    "id": "eat-5",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Phở trộn"
+  },
+  {
+    "id": "eat-6",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún chả"
+  },
+  {
+    "id": "eat-7",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún đậu mắm tôm"
+  },
+  {
+    "id": "eat-8",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún bò Huế"
+  },
+  {
+    "id": "eat-9",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún riêu cua"
+  },
+  {
+    "id": "eat-10",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún ốc"
+  },
+  {
+    "id": "eat-11",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún thang"
+  },
+  {
+    "id": "eat-12",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún mọc"
+  },
+  {
+    "id": "eat-13",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún ngan"
+  },
+  {
+    "id": "eat-14",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún vịt"
+  },
+  {
+    "id": "eat-15",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún cá"
+  },
+  {
+    "id": "eat-16",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún hải sản"
+  },
+  {
+    "id": "eat-17",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún sườn chua"
+  },
+  {
+    "id": "eat-18",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún trộn Nam Bộ"
+  },
+  {
+    "id": "eat-19",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún nem nướng"
+  },
+  {
+    "id": "eat-20",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún bung"
+  },
+  {
+    "id": "eat-21",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún dọc mùng"
+  },
+  {
+    "id": "eat-22",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bún giả cầy"
+  },
+  {
+    "id": "eat-23",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Bánh đa cua"
+  },
+  {
+    "id": "eat-24",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Miến lươn"
+  },
+  {
+    "id": "eat-25",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Miến ngan"
+  },
+  {
+    "id": "eat-26",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Miến trộn"
+  },
+  {
+    "id": "eat-27",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Hủ tiếu"
+  },
+  {
+    "id": "eat-28",
+    "mode": "eat",
+    "group": "Phở & bún",
+    "name": "Mì vằn thắn"
+  },
+  {
+    "id": "eat-29",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Cơm tấm"
+  },
+  {
+    "id": "eat-30",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Cơm gà"
+  },
+  {
+    "id": "eat-31",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Cơm rang dưa bò"
+  },
+  {
+    "id": "eat-32",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Cơm niêu"
+  },
+  {
+    "id": "eat-33",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Cơm sườn"
+  },
+  {
+    "id": "eat-34",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Cơm văn phòng"
+  },
+  {
+    "id": "eat-35",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Cơm chay"
+  },
+  {
+    "id": "eat-36",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Xôi xéo"
+  },
+  {
+    "id": "eat-37",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Xôi mặn"
+  },
+  {
+    "id": "eat-38",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Xôi gà"
+  },
+  {
+    "id": "eat-39",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Xôi sườn"
+  },
+  {
+    "id": "eat-40",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Chả cá"
+  },
+  {
+    "id": "eat-41",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Vịt quay"
+  },
+  {
+    "id": "eat-42",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Ngan cháy tỏi"
+  },
+  {
+    "id": "eat-43",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Gà nướng"
+  },
+  {
+    "id": "eat-44",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Gà rang muối"
+  },
+  {
+    "id": "eat-45",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Sườn nướng"
+  },
+  {
+    "id": "eat-46",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Bò bít tết"
+  },
+  {
+    "id": "eat-47",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Bò lúc lắc"
+  },
+  {
+    "id": "eat-48",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Cá nướng"
+  },
+  {
+    "id": "eat-49",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Ốc luộc"
+  },
+  {
+    "id": "eat-50",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Ốc xào"
+  },
+  {
+    "id": "eat-51",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Hải sản hấp"
+  },
+  {
+    "id": "eat-52",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Ếch rang muối"
+  },
+  {
+    "id": "eat-53",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Dê nướng"
+  },
+  {
+    "id": "eat-54",
+    "mode": "eat",
+    "group": "Cơm & món chính",
+    "name": "Nem nướng Nha Trang"
+  },
+  {
+    "id": "eat-55",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Lẩu Thái"
+  },
+  {
+    "id": "eat-56",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Lẩu riêu cua bắp bò"
+  },
+  {
+    "id": "eat-57",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Lẩu nấm"
+  },
+  {
+    "id": "eat-58",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Lẩu gà lá é"
+  },
+  {
+    "id": "eat-59",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Lẩu ếch"
+  },
+  {
+    "id": "eat-60",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Lẩu bò"
+  },
+  {
+    "id": "eat-61",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Lẩu cá"
+  },
+  {
+    "id": "eat-62",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Lẩu hải sản"
+  },
+  {
+    "id": "eat-63",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Lẩu cháo"
+  },
+  {
+    "id": "eat-64",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Lẩu vịt om sấu"
+  },
+  {
+    "id": "eat-65",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Lẩu chay"
+  },
+  {
+    "id": "eat-66",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Nướng than hoa"
+  },
+  {
+    "id": "eat-67",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Nướng Hàn Quốc"
+  },
+  {
+    "id": "eat-68",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Nướng Nhật Bản"
+  },
+  {
+    "id": "eat-69",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Nầm bò nướng"
+  },
+  {
+    "id": "eat-70",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Bò nhúng dấm"
+  },
+  {
+    "id": "eat-71",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Buffet lẩu"
+  },
+  {
+    "id": "eat-72",
+    "mode": "eat",
+    "group": "Lẩu & nướng",
+    "name": "Buffet hải sản"
+  },
+  {
+    "id": "eat-73",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Bánh cuốn"
+  },
+  {
+    "id": "eat-74",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Bánh mì pate"
+  },
+  {
+    "id": "eat-75",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Bánh mì chảo"
+  },
+  {
+    "id": "eat-76",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Bánh giò"
+  },
+  {
+    "id": "eat-77",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Bánh đúc nóng"
+  },
+  {
+    "id": "eat-78",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Bánh tôm"
+  },
+  {
+    "id": "eat-79",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Bánh gối"
+  },
+  {
+    "id": "eat-80",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Bánh xèo"
+  },
+  {
+    "id": "eat-81",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Bánh khọt"
+  },
+  {
+    "id": "eat-82",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Bánh tráng trộn"
+  },
+  {
+    "id": "eat-83",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Bánh tráng nướng"
+  },
+  {
+    "id": "eat-84",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Nem chua rán"
+  },
+  {
+    "id": "eat-85",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Nem lụi"
+  },
+  {
+    "id": "eat-86",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Cháo sườn"
+  },
+  {
+    "id": "eat-87",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Cháo trai"
+  },
+  {
+    "id": "eat-88",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Cháo lòng"
+  },
+  {
+    "id": "eat-89",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Súp cua"
+  },
+  {
+    "id": "eat-90",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Há cảo"
+  },
+  {
+    "id": "eat-91",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Sủi cảo"
+  },
+  {
+    "id": "eat-92",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Gà rán"
+  },
+  {
+    "id": "eat-93",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Khoai tây chiên"
+  },
+  {
+    "id": "eat-94",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Tokbokki"
+  },
+  {
+    "id": "eat-95",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Kimbap"
+  },
+  {
+    "id": "eat-96",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Mì trộn"
+  },
+  {
+    "id": "eat-97",
+    "mode": "eat",
+    "group": "Ăn vặt",
+    "name": "Bánh bao"
+  },
+  {
+    "id": "eat-98",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Pizza"
+  },
+  {
+    "id": "eat-99",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Mì Ý sốt bò bằm"
+  },
+  {
+    "id": "eat-100",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Mì Ý sốt kem nấm"
+  },
+  {
+    "id": "eat-101",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Pasta hải sản"
+  },
+  {
+    "id": "eat-102",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Burger"
+  },
+  {
+    "id": "eat-103",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Taco"
+  },
+  {
+    "id": "eat-104",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Burrito"
+  },
+  {
+    "id": "eat-105",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Sushi"
+  },
+  {
+    "id": "eat-106",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Sashimi"
+  },
+  {
+    "id": "eat-107",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Ramen"
+  },
+  {
+    "id": "eat-108",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Udon"
+  },
+  {
+    "id": "eat-109",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Soba"
+  },
+  {
+    "id": "eat-110",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Cơm cà ri Nhật"
+  },
+  {
+    "id": "eat-111",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Tonkatsu"
+  },
+  {
+    "id": "eat-112",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Cơm trộn Hàn Quốc"
+  },
+  {
+    "id": "eat-113",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Mì lạnh Hàn Quốc"
+  },
+  {
+    "id": "eat-114",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Gà sốt Hàn Quốc"
+  },
+  {
+    "id": "eat-115",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Dimsum"
+  },
+  {
+    "id": "eat-116",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Vịt quay Bắc Kinh"
+  },
+  {
+    "id": "eat-117",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Mì kéo Trung Hoa"
+  },
+  {
+    "id": "eat-118",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Cơm Thái"
+  },
+  {
+    "id": "eat-119",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Pad Thai"
+  },
+  {
+    "id": "eat-120",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Tom Yum"
+  },
+  {
+    "id": "eat-121",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Món Ấn Độ"
+  },
+  {
+    "id": "eat-122",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Món Mexico"
+  },
+  {
+    "id": "eat-123",
+    "mode": "eat",
+    "group": "Món quốc tế",
+    "name": "Món Địa Trung Hải"
+  },
+  {
+    "id": "eat-124",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Chè truyền thống"
+  },
+  {
+    "id": "eat-125",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Chè khúc bạch"
+  },
+  {
+    "id": "eat-126",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Chè bưởi"
+  },
+  {
+    "id": "eat-127",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Tào phớ"
+  },
+  {
+    "id": "eat-128",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Caramen"
+  },
+  {
+    "id": "eat-129",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Kem Tràng Tiền"
+  },
+  {
+    "id": "eat-130",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Kem dừa"
+  },
+  {
+    "id": "eat-131",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Sữa chua dẻo"
+  },
+  {
+    "id": "eat-132",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Sữa chua nếp cẩm"
+  },
+  {
+    "id": "eat-133",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Bánh flan"
+  },
+  {
+    "id": "eat-134",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Bánh cheesecake"
+  },
+  {
+    "id": "eat-135",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Bánh tiramisu"
+  },
+  {
+    "id": "eat-136",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Bánh crepe"
+  },
+  {
+    "id": "eat-137",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Bánh su kem"
+  },
+  {
+    "id": "eat-138",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Bánh croissant"
+  },
+  {
+    "id": "eat-139",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Bánh waffle"
+  },
+  {
+    "id": "eat-140",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Pancake"
+  },
+  {
+    "id": "eat-141",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Donut"
+  },
+  {
+    "id": "eat-142",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Bánh ngọt Pháp"
+  },
+  {
+    "id": "eat-143",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Cà phê trứng"
+  },
+  {
+    "id": "eat-144",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Cà phê muối"
+  },
+  {
+    "id": "eat-145",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Cà phê cốt dừa"
+  },
+  {
+    "id": "eat-146",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Matcha latte"
+  },
+  {
+    "id": "eat-147",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Trà sữa"
+  },
+  {
+    "id": "eat-148",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Trà hoa quả"
+  },
+  {
+    "id": "eat-149",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Cacao nóng"
+  },
+  {
+    "id": "eat-150",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Sinh tố"
+  },
+  {
+    "id": "eat-151",
+    "mode": "eat",
+    "group": "Đồ ngọt & cà phê",
+    "name": "Nước ép"
+  },
+  {
+    "id": "play-1",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Dạo hồ Hoàn Kiếm"
+  },
+  {
+    "id": "play-2",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Dạo hồ Tây"
+  },
+  {
+    "id": "play-3",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Phố đi bộ cuối tuần"
+  },
+  {
+    "id": "play-4",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Phố cổ Hà Nội"
+  },
+  {
+    "id": "play-5",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Cầu Long Biên"
+  },
+  {
+    "id": "play-6",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Bãi đá sông Hồng"
+  },
+  {
+    "id": "play-7",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Thung lũng hoa hồ Tây"
+  },
+  {
+    "id": "play-8",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Vườn nhãn Long Biên"
+  },
+  {
+    "id": "play-9",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Đạp xe quanh hồ Tây"
+  },
+  {
+    "id": "play-10",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Đạp xe công viên"
+  },
+  {
+    "id": "play-11",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Picnic công viên"
+  },
+  {
+    "id": "play-12",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Ngắm hoàng hôn"
+  },
+  {
+    "id": "play-13",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Chụp ảnh phố Phan Đình Phùng"
+  },
+  {
+    "id": "play-14",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Dạo phố Trúc Bạch"
+  },
+  {
+    "id": "play-15",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Phố sách 19 tháng 12"
+  },
+  {
+    "id": "play-16",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Chợ hoa Quảng Bá"
+  },
+  {
+    "id": "play-17",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Chợ đêm phố cổ"
+  },
+  {
+    "id": "play-18",
+    "mode": "play",
+    "group": "Dạo phố & ngoài trời",
+    "name": "Tour đi bộ kiến trúc Hà Nội"
+  },
+  {
+    "id": "play-19",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Công viên Thống Nhất"
+  },
+  {
+    "id": "play-20",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Công viên Cầu Giấy"
+  },
+  {
+    "id": "play-21",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Công viên Yên Sở"
+  },
+  {
+    "id": "play-22",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Công viên Hòa Bình"
+  },
+  {
+    "id": "play-23",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Công viên Bách Thảo"
+  },
+  {
+    "id": "play-24",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Công viên Thủ Lệ"
+  },
+  {
+    "id": "play-25",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Công viên Thiên văn học"
+  },
+  {
+    "id": "play-26",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Vườn thực vật Hà Nội"
+  },
+  {
+    "id": "play-27",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Vườn hoa Nhật Tân"
+  },
+  {
+    "id": "play-28",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Vườn quốc gia Ba Vì"
+  },
+  {
+    "id": "play-29",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Núi Trầm"
+  },
+  {
+    "id": "play-30",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Hồ Đồng Đò"
+  },
+  {
+    "id": "play-31",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Hồ Hàm Lợn"
+  },
+  {
+    "id": "play-32",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Hồ Đồng Mô"
+  },
+  {
+    "id": "play-33",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Làng cổ Đường Lâm"
+  },
+  {
+    "id": "play-34",
+    "mode": "play",
+    "group": "Công viên & thiên nhiên",
+    "name": "Làng gốm Bát Tràng"
+  },
+  {
+    "id": "play-35",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Bảo tàng Dân tộc học"
+  },
+  {
+    "id": "play-36",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Bảo tàng Mỹ thuật Việt Nam"
+  },
+  {
+    "id": "play-37",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Bảo tàng Phụ nữ Việt Nam"
+  },
+  {
+    "id": "play-38",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Bảo tàng Hà Nội"
+  },
+  {
+    "id": "play-39",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Bảo tàng Lịch sử Quốc gia"
+  },
+  {
+    "id": "play-40",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Bảo tàng Lịch sử Quân sự Việt Nam"
+  },
+  {
+    "id": "play-41",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Văn Miếu Quốc Tử Giám"
+  },
+  {
+    "id": "play-42",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Hoàng thành Thăng Long"
+  },
+  {
+    "id": "play-43",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Di tích Nhà tù Hỏa Lò"
+  },
+  {
+    "id": "play-44",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Múa rối nước"
+  },
+  {
+    "id": "play-45",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Nhà hát Lớn Hà Nội"
+  },
+  {
+    "id": "play-46",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Xem kịch"
+  },
+  {
+    "id": "play-47",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Nghe nhạc acoustic"
+  },
+  {
+    "id": "play-48",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Nghe jazz"
+  },
+  {
+    "id": "play-49",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Triển lãm nghệ thuật"
+  },
+  {
+    "id": "play-50",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Không gian sáng tạo"
+  },
+  {
+    "id": "play-51",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Tour đêm di tích"
+  },
+  {
+    "id": "play-52",
+    "mode": "play",
+    "group": "Văn hóa & nghệ thuật",
+    "name": "Tham quan làng nghề"
+  },
+  {
+    "id": "play-53",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Xem phim rạp"
+  },
+  {
+    "id": "play-54",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Xem phim IMAX"
+  },
+  {
+    "id": "play-55",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Xem phim nghệ thuật"
+  },
+  {
+    "id": "play-56",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Bowling"
+  },
+  {
+    "id": "play-57",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Billiards"
+  },
+  {
+    "id": "play-58",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Board game"
+  },
+  {
+    "id": "play-59",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Escape room"
+  },
+  {
+    "id": "play-60",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Karaoke"
+  },
+  {
+    "id": "play-61",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Trò chơi arcade"
+  },
+  {
+    "id": "play-62",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Trượt băng"
+  },
+  {
+    "id": "play-63",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Thủy cung"
+  },
+  {
+    "id": "play-64",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Trampoline"
+  },
+  {
+    "id": "play-65",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Trung tâm thương mại"
+  },
+  {
+    "id": "play-66",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Nhà sách"
+  },
+  {
+    "id": "play-67",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Quán cà phê sách"
+  },
+  {
+    "id": "play-68",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Chụp photobooth"
+  },
+  {
+    "id": "play-69",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Studio chụp ảnh đôi"
+  },
+  {
+    "id": "play-70",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Xem hài độc thoại"
+  },
+  {
+    "id": "play-71",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "VR game"
+  },
+  {
+    "id": "play-72",
+    "mode": "play",
+    "group": "Giải trí trong nhà",
+    "name": "Vẽ tranh thư giãn"
+  },
+  {
+    "id": "play-73",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Workshop làm gốm"
+  },
+  {
+    "id": "play-74",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Workshop vẽ tranh"
+  },
+  {
+    "id": "play-75",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Workshop làm nến"
+  },
+  {
+    "id": "play-76",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Workshop làm bánh"
+  },
+  {
+    "id": "play-77",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Workshop cắm hoa"
+  },
+  {
+    "id": "play-78",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Workshop pha cà phê"
+  },
+  {
+    "id": "play-79",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Workshop làm nước hoa"
+  },
+  {
+    "id": "play-80",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Workshop làm trang sức"
+  },
+  {
+    "id": "play-81",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Workshop làm đồ da"
+  },
+  {
+    "id": "play-82",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Workshop thêu tay"
+  },
+  {
+    "id": "play-83",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Workshop làm terrarium"
+  },
+  {
+    "id": "play-84",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Lớp nấu ăn đôi"
+  },
+  {
+    "id": "play-85",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Làm nhẫn bạc đôi"
+  },
+  {
+    "id": "play-86",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Tô tượng"
+  },
+  {
+    "id": "play-87",
+    "mode": "play",
+    "group": "Workshop & trải nghiệm",
+    "name": "Tự làm album kỷ niệm"
+  },
+  {
+    "id": "play-88",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Cầu lông"
+  },
+  {
+    "id": "play-89",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Pickleball"
+  },
+  {
+    "id": "play-90",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Bóng bàn"
+  },
+  {
+    "id": "play-91",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Bơi trong nhà"
+  },
+  {
+    "id": "play-92",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Leo núi trong nhà"
+  },
+  {
+    "id": "play-93",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Chèo SUP"
+  },
+  {
+    "id": "play-94",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Chèo kayak"
+  },
+  {
+    "id": "play-95",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Yoga đôi"
+  },
+  {
+    "id": "play-96",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Nhảy khiêu vũ"
+  },
+  {
+    "id": "play-97",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Bắn cung"
+  },
+  {
+    "id": "play-98",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Go-kart"
+  },
+  {
+    "id": "play-99",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Mini golf"
+  },
+  {
+    "id": "play-100",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Massage thư giãn"
+  },
+  {
+    "id": "play-101",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Spa đôi"
+  },
+  {
+    "id": "play-102",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Cắm trại ngoại thành"
+  },
+  {
+    "id": "play-103",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Glamping"
+  },
+  {
+    "id": "play-104",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Đi bộ đường dài"
+  },
+  {
+    "id": "play-105",
+    "mode": "play",
+    "group": "Vận động & thư giãn",
+    "name": "Tour xe buýt hai tầng"
+  }
+]
